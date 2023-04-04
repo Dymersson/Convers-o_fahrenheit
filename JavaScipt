@@ -1,0 +1,26 @@
+<DOCTYPE HTML>
+    <html> 
+        <head>
+            <body>
+                <script>
+                    
+                    function Conversão() {
+                    var F = parseInt(document.getElementById("v1").value);
+                    
+                    var s = (F - 32) * 5/9;
+                     
+                    document.getElementById("res").innerHTML = "A temperatura é:  <b><font color = #00FF00>" + s + "</font>.<b/>";
+                    document.getElementById("Outrasaida").innerHTML = "Resposta:  " + s + ".";
+                    } 
+                      
+                </script>
+
+                <p>Temperatura em °F: </p>
+                <input type= "text" id = "v1">
+                <br><br>
+                <button type="button" onclick="Conversão()">Conversão</button><br>
+                <textarea id="Outrasaida" name="story" rows = "5" cols="33"></textarea><br><br>
+                <p id="res"> Resposta</p>
+            </body>
+        </head>
+    
