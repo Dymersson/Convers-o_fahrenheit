@@ -9,8 +9,8 @@
                     
                     var s = (F - 32) * 5/9;
                      
-                    document.getElementById("res").innerHTML = "A temperatura é:  <b><font color = #00FF00>" + s + "</font>.<b/>";
-                    document.getElementById("Outrasaida").innerHTML = "Resposta:  " + s + ".";
+                    document.getElementById("res").innerHTML = "A temperatura é:  <b><font color = #00FF00>" + s.toFixed(2) + "</font>°C.<b/>";
+                    document.getElementById("Outrasaida").innerHTML = "Resposta:  " + s.toFixed(2)+ "°C" , ".";
                     } 
                       
                 </script>
@@ -20,7 +20,7 @@
                 <br><br>
                 <button type="button" onclick="Conversão()">Conversão</button><br>
                 <textarea id="Outrasaida" name="story" rows = "5" cols="33"></textarea><br><br>
-                <p id="res"> Resposta</p>
+                <p id="res"> Temperatura em Celsius</p>
             </body>
         </head>
     
